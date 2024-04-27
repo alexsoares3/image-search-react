@@ -1,0 +1,182 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2D3250;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #424769;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  color: #F6B17A;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #F6B17A;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.galeria-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;   
+}
+
+.galeria-imagens img {
+  margin: 10px;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.galeria-imagens img:hover {
+  transform: scale(1.1);
+}
+
+.carregar-mais-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carregar-mais {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #F6B17A;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-info {
+  text-align: center;
+}
+
+.image-info h2 {
+  color: #F6B17A;
+}
+
+.image-info img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.image-info button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #F6B17A;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  max-height: 90%;
+  overflow: hidden;
+  background: #424769;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: #F6B17A;
+}
+
+.modal img {
+  max-width: 100%; /* Ensure the image doesn't exceed the modal width */
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Add the following styles to center the modal content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fechar-button,
+.download-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #F6B17A;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.download-button {
+  background-color: #4CAF50;
+}
+
+.fechar-button:hover {
+  background-color: #D4884D;
+}
+
+.download-button:hover {
+  background-color: #3e9141;
+}
+
+/* Add the following style for button container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
