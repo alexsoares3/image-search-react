@@ -19,7 +19,7 @@ const App = () => {
       // Atualiza as imagens considerando se e a primeira pagina ou nao
       setImages((prevImages) => (page === 1 ? response.data.results : [...prevImages, ...response.data.results]));
     } catch (error) {
-      console.error('Erro ao procurar imagens:', error);
+      console.error('Erro ao procurar imagens:.', error);
     }
   };
 
